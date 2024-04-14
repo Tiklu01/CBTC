@@ -1,5 +1,7 @@
+import { SignedOut } from "@clerk/nextjs"
 import Image from "next/image"
 import Link from "next/link"
+import { Button } from "../ui/button"
 
 const Header = () => {
   return (
@@ -11,10 +13,16 @@ const Header = () => {
                  alt="Event Planner"
                   width={128}
                    height={38}
+                   priority={true}
+                   
                     />
             </Link>
             <div className="flex w-32 justify-end gap-3">
-
+            <SignedOut>
+                <Button asChild className="rounded-full" size="lg">
+                    <Link href="/sign-in">Login</Link>
+                </Button>
+            </SignedOut>
             </div>
         </div>
      </header>
