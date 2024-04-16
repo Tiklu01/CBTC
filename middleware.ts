@@ -11,7 +11,7 @@ export default authMiddleware({
         "/assets/images/hero.png",
         "/assets/images/logo.svg",
         "/favicon.ico",
-        "/api/webhooks/clerk(.*)",
+        
     ],
     ignoredRoutes:[
         '/api/webhook/clerk',
