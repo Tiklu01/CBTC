@@ -11,13 +11,13 @@ const Header = () => {
         <div className="wrapper flex items-center justify-between">
             <Link href="/">
                 <Image 
-                src="/assets/images/logo.svg"
+                src="/assets/generated/eventplanner360.png"
                  alt="Event Planner"
-                  width={128}
+                  width={280}
                    height={38}
                    priority={true}
                     />
-                
+        
             </Link>
 
             <SignedIn>

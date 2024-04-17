@@ -8,9 +8,9 @@ const Footer = () => {
       gap-4 p-5 text-center sm:flex-row">
         <Link href="/">
         <Image
-        src="/assets/images/logo.svg"
+        src="/assets/generated/eventplanner360.png"
         alt="logo"
-        width={128}
+        width={150}
         height={38}
         />
         </Link>

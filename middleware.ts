@@ -11,7 +11,7 @@ export default authMiddleware({
         "/assets/images/hero.png",
         "/assets/images/logo.svg",
         "/favicon.ico",
-        
+        "/assets/generated/eventplanner360.png"
     ],
     ignoredRoutes:[
         '/api/webhook/clerk',
