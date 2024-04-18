@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input"
 import { eventFormSchema } from "@/lib/validator"
 import * as z from "zod"
 import { eventDefaultValues } from "@/constants"
+import Dropdown from "./Dropdown"
 
 
 type EventFormProps = {
@@ -66,8 +67,8 @@ const EventForm = ({ userId, type } : EventFormProps) => {
         render={({ field }) => (
           <FormItem className="w-full">
             <FormControl>
-              <Input placeholder="Event Title" {...field}
-              className="input-field" />
+              <Dropdown omChangeHandler={field.onChange}
+              value = {field.value} />
             </FormControl>
             <FormMessage />
           </FormItem>
