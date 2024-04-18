@@ -67,7 +67,7 @@ const EventForm = ({ userId, type } : EventFormProps) => {
         render={({ field }) => (
           <FormItem className="w-full">
             <FormControl>
-              <Dropdown omChangeHandler={field.onChange}
+              <Dropdown onChangeHandler={field.onChange}
               value = {field.value} />
             </FormControl>
             <FormMessage />
