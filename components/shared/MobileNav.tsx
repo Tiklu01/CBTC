@@ -26,9 +26,9 @@ const MobileNav = () => {
   </SheetTrigger>
   <SheetContent className="flex flex-col gap-6 bg-white md:hidden ">
     <Image
-    src="assets/images/logo.svg"
+    src="/assets/generated/eventplanner360.png"
     alt="logo"
-    width={128}
+    width={158}
     height={38}
     />
     <Separator className="border border-gray-50" />
