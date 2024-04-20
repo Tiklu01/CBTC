@@ -251,7 +251,10 @@ const EventForm = ({ userId, type } : EventFormProps) => {
                               peer-disabled:opacity-70"
                               >Free Ticket</label>
                             
-                            <Checkbox id="isFree"
+                            <Checkbox
+                            onCheckedChange={field.onChange}
+                            checked={field.value}
+                             id="isFree"
                             className="mr-2 h-5 w-5 border-2 border-primary-500"/>
 
                             </div>
