@@ -4,6 +4,7 @@ import { auth } from "@clerk/nextjs"
 const CreateEvent = () => {
     const {sessionClaims} = auth() // a hook imported from clerk to handle userID
     const userId = sessionClaims?.userId as string
+    console.log(userId)
   return (
     <>
     <section className="bg-primary-50 bg-dotted-pattern bg-cover
