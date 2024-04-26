@@ -4,7 +4,7 @@ import { auth } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { DeleteConfirmation } from './DeleteConfogitrmation'
+import { DeleteConfirmation } from './DeleteConformation'
 
 type CardProps = {
   event: IEvent,
