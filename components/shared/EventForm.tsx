@@ -28,12 +28,15 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { useUploadThing } from '@/lib/uploadthing'
 import { useRouter } from "next/navigation"
 import { createEvent } from "@/lib/actions/events.actions"
+import { IEvent } from "@/lib/database/models/event.model"
 type EventFormProps = {
     userId : string,
-    type : "Create" | "Update"
+    type : "Create" | "Update",
+    event?: IEvent,
+    eventId?: string
 }
 
-const EventForm = ({ userId, type } : EventFormProps) => {
+const EventForm = ({ userId, type, event, eventId } : EventFormProps) => {
     const [files, setFiles] = useState<File[]>([]) //the FileWithPath has been changed to File in official Docs
     const initialValues = eventDefaultValues
     const router = useRouter()
