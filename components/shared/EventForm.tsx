@@ -38,7 +38,12 @@ type EventFormProps = {
 
 const EventForm = ({ userId, type, event, eventId } : EventFormProps) => {
     const [files, setFiles] = useState<File[]>([]) //the FileWithPath has been changed to File in official Docs
-    const initialValues = eventDefaultValues
+    const initialValues = event && type ==="Update" 
+    ? {...event, 
+      startDateTime: new Date(event.startDateTime),
+      endDateTime: new Date(event.endDateTime)
+     }
+    : eventDefaultValues
     const router = useRouter()
     const { startUpload } = useUploadThing('imageUploader')
     // 1. Define your form.
