@@ -10,7 +10,7 @@ type CollectionProps = {
     page: number | string,
     totalPages?: number,
     urlParamName?: string,
-    collectionType?: 'Events_Organizeed' | 'My_Tickets' | 'All_Events',
+    collectionType?: 'Events_Organized' | 'My_Tickets' | 'All_Events',
 
 }
 
@@ -30,7 +30,7 @@ const Collection = ({
               <ul className='grid w-full grid-cols-1 gap-5 sm:grid-cols-2
           lg:grid-cols-3 xl:gap-10 '  >
                   {data.map((event)=>{
-                    const hasOrderLink = collectionType === 'Events_Organizeed';
+                    const hasOrderLink = collectionType === 'Events_Organized';
                     const hidePrice = collectionType === 'My_Tickets';
 
                     return(
