@@ -17,7 +17,7 @@ const profilePage = async () => {
     py-5 md:py-10'>
         <div className='wapper flex items-center justify-center sm:justify-between'>
             <h3 className='h3-bold text-center sm:text-left'>My Tickets</h3>
-            <Button asChild className='button hidden sm:flex'>
+            <Button asChild size="lg" className='button hidden sm:flex'>
                 <Link href='/#events'>
                   Explore More Events
                 </Link>
@@ -41,7 +41,7 @@ const profilePage = async () => {
     py-5 md:py-10'>
         <div className='wapper flex items-center justify-center sm:justify-between'>
             <h3 className='h3-bold text-center sm:text-left'>My Tickets</h3>
-            <Button asChild className='button hidden sm:flex'>
+            <Button asChild size="lg" className='button hidden sm:flex'>
                 <Link href='/events/create'>
                   Create New Event
                 </Link>
