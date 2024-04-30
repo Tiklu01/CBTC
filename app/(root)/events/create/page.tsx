@@ -1,20 +1,20 @@
 import EventForm from "@/components/shared/EventForm"
-import { auth } from "@clerk/nextjs"
+import { auth } from "@clerk/nextjs";
 
 const CreateEvent = () => {
-    const {sessionClaims} = auth() // a hook imported from clerk to handle userID
-    const userId = sessionClaims?.userId as string
-    console.log(userId)
+  const { sessionClaims } = auth();
+
+  const userId = sessionClaims?.userId as string;
+
   return (
     <>
-    <section className="bg-primary-50 bg-dotted-pattern bg-cover
-    bg-center py-5 md:py-10">
+      <section className="bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
         <h3 className="wrapper h3-bold text-center sm:text-left">Create Event</h3>
+      </section>
 
-    </section>
-    <div className="wrapper my-8">
-        <EventForm userId={userId} type="Create"/>
-    </div>
+      <div className="wrapper my-8">
+        <EventForm userId={userId} type="Create" />
+      </div>
     </>
   )
 }
